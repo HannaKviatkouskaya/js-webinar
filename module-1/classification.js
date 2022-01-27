@@ -12,6 +12,7 @@
  */
 function grade(score) {
     let gradeOfStudent;
+
     /*
      * Your task is to calculate the grade of the student
      * based on his/her score which can be found in the
@@ -21,6 +22,23 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+
+    if (score <= 100 && score >= 90) {
+        gradeOfStudent = 5;
+    } else if (80 <= score && score <= 89) {
+        gradeOfStudent = 4
+    } else if (70 <= score && score <= 79) {
+        gradeOfStudent = 3;
+    } else if (60 <= score && score <= 69) {
+        gradeOfStudent = 2;
+    } else if (59 >= score && score >= 0) {
+        gradeOfStudent = 1;
+    } else if (score < 0) {
+        gradeOfStudent = 0;
+    } else if (score > 100) {
+        gradeOfStudent = 0;
+    }
+
 
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;

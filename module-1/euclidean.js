@@ -18,6 +18,16 @@ function euclidean(a, b) {
     // PLACE YOUR CODE BETWEEN THIS...
 
 
+    if (a === 0) { return b; }
+    if (b === 0) { return a; }
+    if (a < 0) { return 0; }
+    if (b < 0) { return 0; }
+
+    gcd = euclidean(b, a % b);
+
+
+
+
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
